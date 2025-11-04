@@ -1,0 +1,192 @@
+import { TrendItem } from '../types';
+
+export const mockTrendItems: TrendItem[] = [
+  // Zenn items
+  {
+    id: 'zenn-1',
+    source: 'zenn',
+    title: 'React 19の新機能を徹底解説',
+    description: 'React 19で追加された新しいフックとServer Componentsについて詳しく解説します。',
+    url: 'https://zenn.dev/example/react19',
+    author: 'tech_writer',
+    authorUrl: 'https://zenn.dev/tech_writer',
+    score: 245,
+    commentsCount: 18,
+    tags: ['React', 'JavaScript', 'Frontend'],
+    publishedAt: new Date('2025-11-03T10:00:00'),
+    thumbnailUrl: 'https://via.placeholder.com/400x200/00B8D4/ffffff?text=React+19'
+  },
+  {
+    id: 'zenn-2',
+    source: 'zenn',
+    title: 'TypeScript 5.8の型推論改善',
+    description: 'TypeScript 5.8で改善された型推論機能について実例を交えて紹介。',
+    url: 'https://zenn.dev/example/typescript58',
+    author: 'type_master',
+    authorUrl: 'https://zenn.dev/type_master',
+    score: 189,
+    commentsCount: 12,
+    tags: ['TypeScript', 'JavaScript'],
+    publishedAt: new Date('2025-11-02T15:30:00'),
+    thumbnailUrl: 'https://via.placeholder.com/400x200/3178C6/ffffff?text=TypeScript'
+  },
+  {
+    id: 'zenn-3',
+    source: 'zenn',
+    title: 'Tailwind CSS v4のbreaking changes',
+    description: 'Tailwind CSS v4で変更される仕様と移行方法について。',
+    url: 'https://zenn.dev/example/tailwind-v4',
+    author: 'css_ninja',
+    authorUrl: 'https://zenn.dev/css_ninja',
+    score: 156,
+    commentsCount: 8,
+    tags: ['CSS', 'Tailwind', 'Frontend'],
+    publishedAt: new Date('2025-11-01T09:15:00'),
+    thumbnailUrl: 'https://via.placeholder.com/400x200/06B6D4/ffffff?text=Tailwind'
+  },
+
+  // GitHub items
+  {
+    id: 'github-1',
+    source: 'github',
+    title: 'shadcn/ui - Beautiful UI components',
+    description: 'Beautifully designed components built with Radix UI and Tailwind CSS.',
+    url: 'https://github.com/shadcn/ui',
+    author: 'shadcn',
+    authorUrl: 'https://github.com/shadcn',
+    score: 58234,
+    commentsCount: 234,
+    tags: ['React', 'UI', 'Tailwind', 'Components'],
+    publishedAt: new Date('2025-10-30T14:20:00'),
+    thumbnailUrl: 'https://via.placeholder.com/400x200/000000/ffffff?text=shadcn/ui'
+  },
+  {
+    id: 'github-2',
+    source: 'github',
+    title: 'bun - Fast JavaScript runtime',
+    description: 'Incredibly fast JavaScript runtime, bundler, test runner, and package manager.',
+    url: 'https://github.com/oven-sh/bun',
+    author: 'oven-sh',
+    authorUrl: 'https://github.com/oven-sh',
+    score: 72456,
+    commentsCount: 456,
+    tags: ['JavaScript', 'Runtime', 'Performance'],
+    publishedAt: new Date('2025-10-31T11:00:00'),
+    thumbnailUrl: 'https://via.placeholder.com/400x200/FBF0DF/000000?text=Bun'
+  },
+  {
+    id: 'github-3',
+    source: 'github',
+    title: 'tauri - Build smaller, faster desktop apps',
+    description: 'Build an optimized, secure, and frontend-independent application for multi-platform deployment.',
+    url: 'https://github.com/tauri-apps/tauri',
+    author: 'tauri-apps',
+    authorUrl: 'https://github.com/tauri-apps',
+    score: 89234,
+    commentsCount: 789,
+    tags: ['Rust', 'Desktop', 'Cross-platform'],
+    publishedAt: new Date('2025-11-04T08:00:00'),
+    thumbnailUrl: 'https://via.placeholder.com/400x200/FFC131/000000?text=Tauri'
+  },
+  {
+    id: 'github-4',
+    source: 'github',
+    title: 'excalidraw - Virtual whiteboard',
+    description: 'Virtual whiteboard for sketching hand-drawn like diagrams.',
+    url: 'https://github.com/excalidraw/excalidraw',
+    author: 'excalidraw',
+    authorUrl: 'https://github.com/excalidraw',
+    score: 76543,
+    commentsCount: 321,
+    tags: ['React', 'Canvas', 'Collaboration'],
+    publishedAt: new Date('2025-11-03T16:45:00'),
+    thumbnailUrl: 'https://via.placeholder.com/400x200/6965DB/ffffff?text=Excalidraw'
+  },
+
+  // Reddit items
+  {
+    id: 'reddit-1',
+    source: 'reddit',
+    title: 'I built a CLI tool for managing dotfiles',
+    description: 'After years of manually syncing my dotfiles, I created a Rust-based CLI that makes it super easy.',
+    url: 'https://reddit.com/r/programming/example1',
+    author: 'rust_developer',
+    authorUrl: 'https://reddit.com/u/rust_developer',
+    score: 1234,
+    commentsCount: 87,
+    tags: ['Rust', 'CLI', 'DevTools'],
+    publishedAt: new Date('2025-11-04T07:30:00'),
+    thumbnailUrl: 'https://via.placeholder.com/400x200/FF4500/ffffff?text=Reddit'
+  },
+  {
+    id: 'reddit-2',
+    source: 'reddit',
+    title: 'Why SQLite is perfect for edge computing',
+    description: 'Deep dive into why SQLite is becoming the go-to database for edge deployments.',
+    url: 'https://reddit.com/r/programming/example2',
+    author: 'db_expert',
+    authorUrl: 'https://reddit.com/u/db_expert',
+    score: 2156,
+    commentsCount: 143,
+    tags: ['Database', 'SQLite', 'Edge Computing'],
+    publishedAt: new Date('2025-11-03T13:00:00'),
+    thumbnailUrl: 'https://via.placeholder.com/400x200/003B57/ffffff?text=SQLite'
+  },
+  {
+    id: 'reddit-3',
+    source: 'reddit',
+    title: 'Ask HN: What are you working on?',
+    description: 'Monthly thread for sharing side projects and getting feedback from the community.',
+    url: 'https://reddit.com/r/programming/example3',
+    author: 'community_mod',
+    authorUrl: 'https://reddit.com/u/community_mod',
+    score: 567,
+    commentsCount: 234,
+    tags: ['Discussion', 'Side Projects'],
+    publishedAt: new Date('2025-11-01T12:00:00'),
+    thumbnailUrl: 'https://via.placeholder.com/400x200/FF4500/ffffff?text=Discussion'
+  },
+  {
+    id: 'reddit-4',
+    source: 'reddit',
+    title: 'The state of AI code generation in 2025',
+    description: 'A comprehensive analysis of how AI is changing software development.',
+    url: 'https://reddit.com/r/programming/example4',
+    author: 'ai_researcher',
+    authorUrl: 'https://reddit.com/u/ai_researcher',
+    score: 3421,
+    commentsCount: 512,
+    tags: ['AI', 'Machine Learning', 'Code Generation'],
+    publishedAt: new Date('2025-11-02T10:30:00'),
+    thumbnailUrl: 'https://via.placeholder.com/400x200/412991/ffffff?text=AI'
+  }
+];
+
+// 利用可能なカテゴリ一覧
+export const availableCategories = [
+  'React',
+  'TypeScript',
+  'JavaScript',
+  'Rust',
+  'Frontend',
+  'CSS',
+  'Tailwind',
+  'UI',
+  'Components',
+  'Runtime',
+  'Performance',
+  'Desktop',
+  'Cross-platform',
+  'Canvas',
+  'Collaboration',
+  'CLI',
+  'DevTools',
+  'Database',
+  'SQLite',
+  'Edge Computing',
+  'Discussion',
+  'Side Projects',
+  'AI',
+  'Machine Learning',
+  'Code Generation'
+];
